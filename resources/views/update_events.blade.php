@@ -28,10 +28,6 @@
                     <label for="Location" class="form-label">Location</label>
                     <input type="text" class="form-control" name="update_location"  value="{{$event->Location}}">
                 </div>
-                <div class="col mb-3">
-                    <label for="Attendees" class="form-label">Attendees</label>
-                    <input type="text" class="form-control" name="update_attendees"  value="{{$event->Attendees}}">
-                </div>
                 <div class="col mb-3 d-flex justify-content-center align-items-center">
                     <input type="hidden" name="id" value="{{$event->id}}">
                     <button type="submit" class="btn btn-success">UPDATE</button>

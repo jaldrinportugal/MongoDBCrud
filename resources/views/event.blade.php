@@ -25,7 +25,6 @@
         <th>eventaname</th>
         <th>date</th>
         <th>location</th>
-        <th>attendees</th>
         <th>Action</th>
 
     </tr>   
@@ -37,7 +36,7 @@
         <td class='aa'>{{ $event->EventName; }}</td>
         <td class='aa'>{{ $event->Date; }}</td>
         <td class='aa'>{{ $event->Location; }}</td>
-        <td class='aa'>{{ $event->Attendees; }}</td>
+        
         <td><a href="{{route('updateEvents', $event->id)}}"><button type="button" class="btn btn-warning">update</button></a></td>
         <td> <a href="{{route('removeEvents', $event->id)}}"><button type="button" class="btn btn-danger">delete</button></a></td>
 
@@ -55,18 +54,13 @@
                     <label for="EventName" class="form-label">Event Name</label>
                     <input class="form-control" type="text" placeholder="Input here.." name="EventName">
                 </div>
-            
                 <div class="col-md-3">
                     <label for="Date" class="form-label">Date</label>
-                    <input class="form-control" type="text" placeholder="Input here.." name="Date">
+                    <input class="form-control" type="date" placeholder="Input here.." name="Date">
                 </div>
                 <div class="col mb-3">
                     <label for="Location" class="form-label">Location</label>
                     <input class="form-control" type="text" placeholder="Input here.." name="Location">
-                </div>
-                <div class="col mb-3">
-                    <label for="Attendees" class="form-label">Attendees</label>
-                    <input class="form-control" type="text" placeholder="Input here.." name="Attendees">
                 </div>
                 <div class="col mb-6 d-flex justify-content-center align-items-center">
                     <button type="submit" class="btn btn-primary">Add</button>

@@ -18,12 +18,13 @@
     <div class="container">
         <div class="row justify-content-between">
             <div class="bb">Event Management System</div> 
-            <nav>
+                <nav>
             
-            <a class="p-2, aa" href="{{ route('event') }}">Events</a>
+                    <a class="p-2, aa" href="{{ route('event') }}">Events</a>
+                    <a class="p-2, aa" href="{{ route('attendee') }}">Attendees</a>
 
 
-            </nav>
+                </nav>
         </div>
     </div>
 </header>

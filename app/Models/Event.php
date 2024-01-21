@@ -12,7 +12,7 @@ class Event extends Model
     protected $collection = 'events';
 
     protected $fillable = [
-        'EventName', 'Date', 'Location', 'Attendees'
+        'EventName', 'Date', 'Location'
     ];
 
 
@@ -22,7 +22,7 @@ class Event extends Model
         return $this->create($data);
     }
 
-    protected $fillables = ['EventName', 'Date', 'Location', 'Attendees',];
+    protected $fillables = ['EventName', 'Date', 'Location',];
     protected $table = 'events';
 
     public function getEvents(){
