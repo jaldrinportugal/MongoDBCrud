@@ -9,21 +9,23 @@
 </head>
 <body>
 <style>
+    #fixed{
+        position: fixed;
+        width: 100%;
+    }
     .bb{
         font-family: Monospace;
         color:yellow;
+        padding-left:1.5rem;
     }
 </style>
-<header class="bg-dark p-3">
+<header id="fixed" class="bg-dark p-3">
     <div class="container">
         <div class="row justify-content-between">
             <div class="bb">Event Management System</div> 
                 <nav>
-            
-                    <a class="p-2, aa" href="{{ route('event') }}">Events</a>
-                    <a class="p-2, aa" href="{{ route('attendee') }}">Attendees</a>
-
-
+                    <a class="bb" href="{{ route('event') }}">Events</a>
+                    <a class="bb" href="{{ route('attendee') }}">Attendees</a>
                 </nav>
         </div>
     </div>

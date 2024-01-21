@@ -2,17 +2,31 @@
 
 @section('content')
 <br>
+<br>
+<br>
+<br>
 <style>
     h1{
         font-family: Monospace;
         text-align:center;
         background-color: #E0E0E0;
     }
-    tr, td{
+    tr{
         font-family: Monospace;
     }
     #aa{        
         font-family: Monospace;
+    }
+    .bb{        
+        font-family: Monospace;
+        color: yellow;
+    }
+    footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
     }
 </style>
 <h1 class="">Event Registration</h1>
@@ -69,7 +83,10 @@
         </div>
     </form>
     <br>
-</div>      
+</div>
+<footer class="bb">
+    <div id="portugal" class="table-dark">© John Aldrin Portugal</div>
+</footer>      
 @endsection
 
 @section('title')

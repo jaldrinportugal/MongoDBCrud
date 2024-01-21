@@ -1,15 +1,30 @@
 @extends('layout.app')
 
 @section('content')
-
+<br>
+<br>
+<br>
+<br>
 <style>
     h1{
         font-family: Monospace;
         text-align:center;
         background-color: #E0E0E0;
     }
+    .bb{        
+        font-family: Monospace;
+        color: yellow;
+    }
+    footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
 </style>    
-    <h1>Update Inputs</h1>
+    <h1>Update Input Event</h1>
+<br>
 <div id="aa"class="card my-4">
     <form action="{{route('saveUpdatedEvents', $event->id)}}" method="post">
         @csrf
@@ -36,5 +51,7 @@
         </div>
     </form>
 </div>
-
+<footer class="bb">
+    <div id="portugal" class="table-dark">© John Aldrin Portugal</div>
+</footer>
 @endsection
